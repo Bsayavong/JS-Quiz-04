@@ -1,1 +1,86 @@
-style.css
+:root {
+    --text1: center;
+    --no: none;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(249, 249, 245);
+}
+
+section {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    padding-bottom: 3%;
+}
+
+.btn {
+    background-color: #0bda1d;
+    border-radius: 11px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+}
+
+.btn:hover {
+    background: #f5b107;
+    text-decoration: var(--no);
+}
+
+.startendButton {
+    background: #0bda1d;
+    border-radius: 11px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-gap: 5px;
+    margin: 10px 0;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+#timer {
+    text-align: right;
+    padding-right: 3%;
+}
+
+#viewScores {
+    color: #ec0d0d;
+    margin-left: 2%;
+}
+
+#questionNumber {
+    font-size: large;
+    font-weight: bold;
+}
+
+#answers {
+    margin: 1% 30%;
+}
+
+ol {
+    list-style-type: number;
+    width: 35%;
+    margin: 3% auto;
+    text-align: center;
+}
+
+li:nth-child(odd) {
+    background-color: rgb(114, 111, 218);
+}

@@ -1,1 +1,69 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <header>
+        <h4 id="viewScores">View High Scores</h4>
+        <p id="timer"></p>
+    </header>
+    <main>
+        <section>
+
+            <!-- Intro to quiz Section-->
+            <div id="openingSection" class="show">
+                <div class="opening container">
+                    <h1>Random Trivia</h1>
+                    <p>Click the Start button if you would like to begin, each wrong answer will deduct 5 seconds from your timer.
+                    </p>
+                    <button class="btn startendButton" id="startButton">Start Quiz</button>
+                </div>
+            </div>
+
+            <!-- Questions Section -->
+            <div id="questionSection" class="hide">
+                <div id="questions container">
+                    <div id="questionNumber"> </div>
+                    <div id="answers" class="btn-grid"></div>
+                </div>
+            </div>
+
+            <!-- Game Over section -->
+            <div id="closingSection" class="hide">
+                <div class="closing container">
+                    <div id="score">
+                    </div>
+
+                    <form id="initialsForm">
+                        <label>Enter Initials</label>
+                        <input type="text" name="highscore" id="initials" placeholder="initals here">
+                        <button class="btn startendButton" id="formButton" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- High Scores Section-->
+            <div id="highScoreSection" class="hide">
+                <div class="highScores container">
+                    <h1 class="highScore">High Scores</h1>
+                    <ol id="highScoreList" class="scoreList"></ol>
+                    <div>
+                        <button class="btn" id="backButton">Back</button>
+                        <button class="btn" id="clearButton">Clear All Scores</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
